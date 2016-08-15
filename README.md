@@ -16,10 +16,10 @@ Android图片压缩结合多种压缩方式，常用的有尺寸压缩、质量�
 
 ## 对比
 
-原图 5.5M
+原图 5.5M  
 <img src="https://github.com/freekite/Android-BitherCompress/blob/master/resources/20160815_141638_001.jpg" width="560px" height="315px" />
 
-压缩后 784k
+压缩后 784k  
 <img src="https://github.com/freekite/Android-BitherCompress/blob/master/resources/compress_1471244287213.jpg" width="560px" height="315px" />
 
 ## 感谢
