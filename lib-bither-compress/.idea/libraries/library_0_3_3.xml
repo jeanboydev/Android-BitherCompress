@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="library-0.3.3">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.liulishuo.filedownloader/library/0.3.3/res" />
+      <root url="jar://$PROJECT_DIR$/../app/build/intermediates/exploded-aar/com.liulishuo.filedownloader/library/0.3.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liulishuo.filedownloader/library/0.3.3/81c6b2813a2d62cb75dc7b1dd4c0744526efd048/library-0.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
