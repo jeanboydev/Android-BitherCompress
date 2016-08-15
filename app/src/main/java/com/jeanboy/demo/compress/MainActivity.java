@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     public void compressImage(Uri uri) {
         Log.e("===compressImage===", "====开始====uri==" + uri.getPath());
         try {
-            File saveFile = new File(getExternalCacheDir(), "compress_final_" + System.currentTimeMillis() + ".jpg");
+            File saveFile = new File(getExternalCacheDir(), "compress_" + System.currentTimeMillis() + ".jpg");
             Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
 
             Log.e("===compressImage===", "====开始==压缩==saveFile==" + saveFile.getAbsolutePath());
