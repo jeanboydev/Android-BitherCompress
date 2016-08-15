@@ -46,5 +46,3 @@ Android图片压缩结合多种压缩方式，常用的有尺寸压缩、质量�
     See the License for the specific language governing permissions and
     limitations under the License.
 
-  [1]: https://github.com/freekite/Android-RecyclerViewHelper/blob/master/resource/ScreenRecord.gif
-
