@@ -3,16 +3,40 @@ Android图片压缩目前最优解决方案。
 
 ------
 
-##介绍
+## 介绍
 
 Android图片压缩结合多种压缩方式，常用的有尺寸压缩、质量压缩以及通过JNI调用libjpeg库来进行压缩，三种方式结合使用实现指定图片内存大小，清晰度达到最优。
 
-##使用
+## 使用
 
 * 导入lib-bither-compress
+
 ```java
 	NativeUtil.compressBitmap(bitmap, savePath);
+
+	NativeUtil.compressBitmap(bitmap, savePath, maxByte, quality);
 ```
+
+* 图像建议尺寸
+
+```Java
+    public final static int QUALITY_320P = 320;//480, 320
+    public final static int QUALITY_360P = 360;//640, 360
+    public final static int QUALITY_480P = 480;//640, 480
+    public final static int QUALITY_720P = 720;//1280, 720
+    public final static int QUALITY_1080P = 1080;//1920, 1080
+    public final static int QUALITY_2K = 1440;//2560, 1440
+    public final static int QUALITY_4K = 2160;//3840, 2160
+```
+
+* 图像默认品质
+
+```Java
+    //见 NativeUtil 中 compressBitmap(bitmap, savePath, maxByte, quality) 方法
+    int options = 80;//100不压缩品质
+```
+
+> 注意：默认将图像压缩到 1280*720 的尺寸，品质为 80 ，图像大小为 1 MB。其他配置可在 lib-bither-compress 中 NativeUtil 下自己配置。
 
 ## 对比
 

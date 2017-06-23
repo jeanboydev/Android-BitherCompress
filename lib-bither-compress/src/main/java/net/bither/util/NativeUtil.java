@@ -4,11 +4,8 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Rect;
-import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
-
-import static android.media.CamcorderProfile.QUALITY_720P;
 
 public class NativeUtil {
 
@@ -22,11 +19,11 @@ public class NativeUtil {
 
     public final static int QUALITY_DEFAULT = QUALITY_720P;
     public final static int SIZE_1KB = 1024;
-    public final static int size_1MB = SIZE_1KB * 1024;
+    public final static int SIZE_1MB = SIZE_1KB * 1024;
 
 
     public static void compressBitmap(Bitmap bitmap, String filePath) {
-        compressBitmap(bitmap, filePath, size_1MB, QUALITY_DEFAULT);
+        compressBitmap(bitmap, filePath, SIZE_1MB, QUALITY_DEFAULT);
     }
 
     public static void compressBitmap(Bitmap bitmap, String filePath, int maxByte, int quality) {
